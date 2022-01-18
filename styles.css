@@ -1,0 +1,208 @@
+html, body {height: 100%;margin: 0;
+    font-family: 'Inter', sans-serif;}
+
+body {display: flex;
+    flex-wrap: wrap;
+    background-color: #efefef;}
+p {margin: 0;}
+
+.header {width: 100%; height: 9%;
+    background-color: rgb(31, 35, 104);
+    color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {font-size: 40px;
+    margin: 0px;}
+
+.right {width: 20%; height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.info {height: 70%;
+    width: 70%;
+    background-color:  #2a2a2a;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-evenly;
+    font-size: 28px;
+    box-sizing: border-box;
+    padding: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+box-shadow: 0 0 3px #2a2a2a;}
+
+.total, .color {display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;}
+
+.color {align-items: center;
+    }
+
+.colorRead {height: 40px;width: 60px;
+    background: rgb(47, 153, 52);
+    border-radius: 10px;}
+
+.colorReading {height: 40px;width: 60px;
+    background:rgb(129, 129, 133);
+    border-radius: 10px;}
+
+.infoText{font-size: 40px;}
+
+.main {width: 80%; height: 90%;
+    display: flex;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    flex-wrap: wrap;}
+
+
+.books {height: 40%;width: 32%;
+    background-color: rgb(129, 129, 133);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 0 0 3px #2a2a2a;}
+
+.new {height:40%; width: 32%;
+    background-color: #fee36e;
+    border-radius:15px;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 999;
+    color: #2a2a2a;
+    box-shadow: 0 0 3px #2a2a2a;}
+
+input#status {height: 20px; width: 30px;}
+
+.books:hover, .new:hover {scale: 1.05;}
+.bookName {font-size: 25px;
+    margin-bottom: 10px;}
+
+.bookDate {margin-bottom: auto;}
+
+
+/*------------FORM-----------*/
+
+.form {background-color: rgba(103, 107, 107, 0.685);
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    display: none;
+    justify-content: center;
+    align-items: center;}
+
+form {position: relative;
+    height: 650px;
+    width: 500px;
+    box-sizing: border-box;
+    border: solid black 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: rgb(21, 24, 63);
+    color: #efefef;
+    font-weight: 200;
+    font-size: x-large;
+    border-radius: 10px;
+    justify-content: space-between;
+   color:#efefef;
+}
+
+.readit {display: flex;
+    flex-direction: row;
+    justify-content: space-between;}
+
+input {
+    height: 28px;
+    padding: 5px;}
+
+#date {padding: 7px;}
+
+.buttons {display: flex;
+    justify-content: space-around;}
+
+#add, #clear {height: 50px;
+    width: 100px; 
+    font-size: x-large; 
+    color: #2a2a2a;
+    background-color: rgb(168, 161, 161);
+    border-radius: 5px;
+    border: 0px;
+    font-weight: 900;}
+
+#add:hover , #clear:hover {scale: 1.2;}
+
+.addBook {text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0px;}
+
+#date, #book, #author, #pages {font-size: x-large;}
+
+input#read {height: 25px; width: 25px; }
+
+.classBook {display: flex;
+    flex-direction: column;
+    gap: 5px;}
+
+.exit {position: absolute;
+        right: 10px;
+        top: 0px;
+        font-size: 40px;
+        background-color: transparent;
+        border: 0;
+        color:#efefef;
+        font-weight: 900;}
+
+.exit:hover {scale:1.4}
+
+.bookName{order: 1;}
+.bookAuthor{order: 2;}
+.bookPages{order: 3}
+.bookDate{order:4}
+.bookStatus{order:5}
+
+.books {position: relative;}
+
+.del {height: 10%; width: 15%;
+    background-color: rgb(207, 18, 18);
+    color: #efefef;
+    border-radius: 5px;
+    border: solid red 1px;
+    font-size: large;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;}
+
+.new {position: absolute;
+    top: 215px;
+    right: 640px;}
+
+.copy{position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 0px;
+    font-size: 21px;
+    width: 100%;
+    gap: 5px;
+    margin-bottom: 8px;
+    font-weight: 400;}
+.git {height: 20px;
+    width: 20px;}

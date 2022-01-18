@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="./img/icone.png">
+</head>
+<body>
+    <div class="header">
+        <p class="title">My Collection</p></div>
+
+    <div class="main"> 
+        <div class="new">
+        <p class="newBook">New Book</p>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="info">
+            <p class="infoText">Info</p>
+            <div class="total">
+                <p>Books</p> <p class="totalNumber">0</p> </div>
+            <div class="total">
+                <p>Read</p> <p class="totalRead">0</p> </div>
+            <div class="total">
+                <p>Reading</p> <p class="totalReading">0</p> </div>
+            <div class="color">
+                <p>Read</p> <div class="colorRead"></div> </div>
+            <div class="color">
+                <p>Reading</p> <div class="colorReading"></div> </div>
+        </div>
+    </div>
+
+    <div class="form" >
+        <form autocomplete="off">
+            <p class="addBook">Add New Book</p>
+            <div class="exit">x</div>
+            <div class ="classBook"><label for="book">Book</label>
+            <input type="text" id="book" placeholder="Book title"></div>
+            <div class ="classBook"><label for="author">Author</label>
+            <input type="text" id="author" placeholder="Author's name"></div>
+            <div class ="classBook"><label for="pages">Number of Pages</label>
+            <input type="text" id="pages" placeholder="Number of pages"></div>
+            <div class ="classBook"><label for="date">Publication date</label>
+            <input type="date" id="date" ></div>
+            <div class ="readit" >
+                <label for="read">Did you finished reading it?</label>
+                <input type="checkbox" id="read"> </div>
+            <div class ="buttons">
+                <button type="button" id="add">Add</button>
+                <button type="reset" id="clear">Reset</button>
+            </div>
+        </form></div>
+        <div class ='copy'> <p class="message">Copyright © 2022 aalbino221</p> <img  class = 'git' src="./img/git.png"> </div>
+
+</body>
+</html>
