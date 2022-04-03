@@ -6,7 +6,7 @@ body {display: flex;
     background-color: #efefef;}
 p {margin: 0;}
 
-.header {width: 100%; height: 9%;
+.header {width: 100%; height: 7%;
     background-color: rgb(31, 35, 104);
     color: #efefef;
     display: flex;
@@ -32,25 +32,26 @@ p {margin: 0;}
     justify-content: space-evenly;
     font-size: 28px;
     box-sizing: border-box;
-    padding: 30px;
+    padding: 7%;
     padding-top: 0px;
     padding-bottom: 0px;
-box-shadow: 0 0 3px #2a2a2a;}
+    box-shadow: 0 0 3px #2a2a2a;}
 
 .total, .color {display: flex;
     width: 100%;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;}
+    justify-content: space-between;
+    flex-wrap: wrap;}
 
 .color {align-items: center;
     }
 
-.colorRead {height: 40px;width: 60px;
+.colorRead {height: 39px;width: 49px;
     background: rgb(47, 153, 52);
     border-radius: 10px;}
 
-.colorReading {height: 40px;width: 60px;
+.colorReading {height: 39px; width: 49px;
     background:rgb(129, 129, 133);
     border-radius: 10px;}
 
@@ -191,12 +192,14 @@ input#read {height: 25px; width: 25px; }
     right: 20px;
     bottom: 20px;}
 
-.new {position: absolute;
-    top: 215px;
-    right: 640px;}
+.new {margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 20%;
+    min-height: 300px;
+    min-width: 300px;}
 
-.copy{position: fixed;
-    display: flex;
+.copy{display: flex;
     justify-content: center;
     bottom: 0px;
     font-size: 21px;
@@ -204,5 +207,61 @@ input#read {height: 25px; width: 25px; }
     gap: 5px;
     margin-bottom: 8px;
     font-weight: 400;}
+
 .git {height: 20px;
     width: 20px;}
+
+@media only screen and (max-width: 700px) {
+    .copy{margin-right: 12%;}
+    .title {margin-right: 12%;}
+
+    .info{
+        margin-right: 5px;
+        font-size:20px;
+        width: 100%;
+    }
+
+    .right {width: 17%;
+        height: 85%;}
+
+    .total {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .colorRead, .colorReading{
+        height: 29px;
+        width: 39px
+    }
+    .infoText {font-size: 25px;}
+
+    .new {font-size: 30px;
+        margin-right: 5%;
+        margin-left: auto;
+        height: 300px;
+        width: 300px;
+        min-width: 100px;
+        min-height: 100px;}
+    .main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 60px;
+        margin-right: auto;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        max-width: 770px;
+        height: 85%;
+        min-height: fit-content;
+    }
+    .books {
+        height: 300px;
+        width: 300px;
+    }
+    form {width: 400px;}
+
+    input {height: 20px;}
+
+    .del {content: "del";}
+}

@@ -27,7 +27,7 @@ function idk(title,author,pages,date,read) {
     book.push(livro)}
 
 document.querySelector('.exit').onclick = function(){form.style.display='none'}
-document.querySelector('.new').onclick = function() {form.style.display= 'flex' ; document.querySelector('.new').style.position = "static" }
+document.querySelector('.new').onclick = function() {form.style.display= 'flex' ; document.querySelector('.new').style.position = "static";  document.querySelector('.new').style.margin = "0" }
 
 document.querySelector('#add').addEventListener('click', () =>{
     let title = document.querySelector('#book').value ;
@@ -90,7 +90,7 @@ status.type = 'checkbox'
 status.setAttribute('id','status')
 let del = document.createElement('button')
 del.classList.add('del')
-del.textContent = 'Delete'
+del.textContent = 'X'
 books.append(del)
 if (book[i].read == true) {status.checked = true ; books.style.backgroundColor = "rgb(47, 153, 52)"}
 bookStatus.append(status)
